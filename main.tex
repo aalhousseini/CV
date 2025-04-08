@@ -5,7 +5,7 @@
     ignoreheadfoot, % set margins without considering header and footer
     top=2 cm, % seperation between body and page edge from the top
     bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
+    left=2 cm, % seperastion between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
@@ -159,227 +159,161 @@
     \newsavebox\ANDbox
     \sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont John Doe
+\begin{header}
+    \fontsize{25 pt}{25 pt}\selectfont Ahmad Al Housseini
 
-        \vspace{5 pt}
+    \vspace{5 pt}
 
-        \normalsize
-        \mbox{Your Location}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{youremail@yourdomain.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{0541 999 99 99}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{yourwebsite.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/yourusername}{github.com/yourusername}}%
-    \end{header}
+    \normalsize
+    Aachen%
+    \kern 5pt%
+    \textbar\kern 5pt%
+    \href{mailto:ahmad.elhousseini@web.de}{ahmad.elhousseini@web.de}%
+    \kern 5pt%
+    \textbar\kern 5pt%
+    \href{tel:+4917664697483}{017664697483}%
+    \kern 5pt%
+    \textbar\kern 5pt%
+    \href{https://ahousseini.dev/}{ahousseini.dev}%
+    \kern 5pt%
+    \textbar\kern 5pt%
+    \href{https://linkedin.com/in/ahmad-al-housseini/}{linkedin.com/in/ahmad-al-housseini}%
+    \kern 5pt%
+    \textbar\kern 5pt%
+    \href{https://github.com/aalhousseini}{github.com/aalhousseini}
+\end{header}
+
 
     \vspace{5 pt - 0.3 cm}
 
 
-    \section{Welcome to RenderCV!}
+\section{About Me}
+
+\begin{onecolentry}
+I am a passionate Computer Science graduate currently pursuing a Master's degree at RWTH Aachen. I enjoy building cloud-native solutions and working with modern DevOps tools like AWS, Docker, Terraform, and CI/CD. I value clean code, effective communication, and continuous learning, and I aim to build impactful and scalable systems that improve developer productivity and system reliability.
+\end{onecolentry}
+    
+
+    \section{Professional Experience}
+
+ \begin{twocolentry}{
+            July 2024 – present
+        }
+\textbf{DevOps Student Assistant}, Deloitte -- Düsseldorf, Germany
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Developed cloud-native solutions using AWS CDK and Python.
+\item Implemented IaC principles, CI/CD pipelines, and operational tooling.
+\item Improved understanding of AWS, clean code, and DevOps best practices.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2cm}
+
+\begin{twocolentry}{01/2024 -- 06/2024}
+\textbf{Student Assistant}, Zeb Consulting -- Münster, Germany
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Worked with Kubernetes and Docker; assisted senior engineers.
+\item Monitored Prometheus systems for reliability and uptime.
+\item Supported infrastructure troubleshooting and maintenance.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2cm}
+
+\begin{twocolentry}{03/2023 -- 12/2023}
+\textbf{Student Assistant}, MHP - A Porsche Company -- Düsseldorf, Germany
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Developed feedback app with Java Spring Boot, Angular, and AWS.
+\item Built CI/CD pipeline using CDK and Developer Tools.
+\item Achieved two AWS certifications, Go-to-Market Bootcamp.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2cm}
+
+\begin{twocolentry}{05/2022 -- 08/2022}
+\textbf{Intern}, Nala for Business Service -- Tripoli, Lebanon
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Gained experience in agile software development with Java.
+\item Delivered presentations and contributed to stakeholder communication.
+\end{highlights}
+\end{onecolentry}
+
+  \section{Education}
+\begin{twocolentry}{04/2024 -- present}
+\textbf{RWTH Aachen}, Master of Science in Computer Science \& Engineering
+\end{twocolentry}
+\begin{onecolentry}
+\textit{Focus on software development, AI, and data and project management.}
+\end{onecolentry}
+
+\vspace{0.1cm}
+
+\begin{twocolentry}{09/2020 -- 04/2024}
+\textbf{University of Applied Science Cologne}, Bachelor of Science in Computer Science \& Engineering (2.0)
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Specialized in software systems and network; thesis centered on a LoRaWan gateway with AWS.
+\item Delivered results within milestones, maintained documentation, contributed to teamwork.
+\end{highlights}
+\end{onecolentry}
 
 
 
-        
+    \section{Projects}        
+        \begin{twocolentry}{
+           \href{https://github.com/aalhousseini/web-infrastructure}{web-infrastructure}
+        }
+            \textbf{Serverless Personal Portfolio}\end{twocolentry}
+        \vspace{0.10 cm}
         \begin{onecolentry}
-            \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
+            \begin{highlights}
+                \item Designed and deployed a serverless portfolio using AWS S3, CloudFront, Route 53, DynamoDB and Lambda
+                \item Tools AWS CDK, Python, Typescript, github Actions
+            \end{highlights}
         \end{onecolentry}
 
+\vspace{0.2 cm}
         \vspace{0.2 cm}
 
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
+     
+    \section{Workshops \& Trainings}
+\begin{twocolentry}{11/10/2023}
+\textbf{Kanban in IT Projects}, MSG Ismaning-Munich
+\end{twocolentry}
+\begin{onecolentry}
+\textit{Learned Kanban principles, their applications, and presented results effectively.}
+\end{onecolentry}
 
+\vspace{0.2cm}
+\begin{twocolentry}{03/11/2023}
+\textbf{Design Thinking}, MSG Ismaning-Munich
+\end{twocolentry}
+\begin{onecolentry}
+\textit{Explored creative thinking, structured ideation phases, and delivered a solution pitch.}
+\end{onecolentry}    
+ \section{Skills \& Personal}
 
-    
-    \section{Quick Guide}
-
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
-
-    \section{Education}
-
-
-
-        
-        \begin{twocolentry}{
-            Sept 2000 – May 2005
-        }
-            \textbf{University of Pennsylvania}, BS in Computer Science\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-                \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Experience}
-
-
-
-        
-        \begin{twocolentry}{
-            June 2005 – Aug 2007
-        }
-            \textbf{Software Engineer}, Apple -- Cupertino, CA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            June 2003 – Aug 2003
-        }
-            \textbf{Software Engineer Intern}, Microsoft -- Redmond, WA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Publications}
-
-
-
-        
-        \begin{samepage}
-            \begin{twocolentry}{
-                Jan 2004
-            }
-                \textbf{3D Finite Element Analysis of No-Insulation Coils}
-            \end{twocolentry}
-
-            \vspace{0.10 cm}
-            
-            \begin{onecolentry}
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-
-                \vspace{0.10 cm}
-                
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-        \end{onecolentry}
-        \end{samepage}
-
-
-    
-    \section{Projects}
-
-
-
-        
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Technologies}
-
-
-
-        
-        \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}
+\begin{onecolentry}
+\textbf{Languages:} Arabic (native), German (fluent), English (fluent), French (intermediate)
+\end{onecolentry}
+\vspace{0.1cm}
+\begin{onecolentry}
+\textbf{IT:} Office Suite, Java, TypeScript, Python, AWS, Docker, Terraform, CI/CD, GitHub, IT Project Management
+\end{onecolentry}
+\vspace{0.1cm}
+\begin{onecolentry}
+\textbf{Interests:} Cooking, outdoor enthusiast, traveling
+\end{onecolentry}
 
 
     
