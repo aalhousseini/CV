@@ -24,6 +24,7 @@ jobs:
           path: Aahousseini_cv.pdf
   upload_to_s3:
     runs-on: ubuntu-latest
+    needs: build_latex
     steps:
       - name: Download PDF
         uses: actions/download-artifact@v4
