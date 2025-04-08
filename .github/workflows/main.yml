@@ -23,7 +23,7 @@ jobs:
           name: cv-pdf
           path: Aahousseini_cv.pdf
   upload_to_s3:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Download PDF
         uses: actions/download-artifact@v4
